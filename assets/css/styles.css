@@ -122,7 +122,7 @@ img {
   align-items: center;
   font-weight: var(--font-semi);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 777px) {
   .nav__menu {
     position: fixed;
     top: var(--header-height);
@@ -517,7 +517,7 @@ img {
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 777px) {
   body {
     margin: 0;
   }
@@ -588,23 +588,51 @@ img {
 
 
 /* qualification section starts */
-.education{
+.qualification__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit,min(300px));
-  /* flex-direction: row; */
-  gap: 1rem;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
-.education-details{
-  border: 2px solid black;
-  padding: 1rem .5rem;
+.qualification__card {
+  background: #fff;
+  padding: 1.5rem;
   border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
 }
-.education-title{
-  font-size: 1.3rem;
-  margin-bottom: 5px;
+
+.qualification__card:hover {
+  transform: translateY(-10px);
 }
+
+.qualification__icon {
+  font-size: 2rem;
+  color: #6c63ff;
+  margin-bottom: 1rem;
+}
+
+.qualification__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.qualification__subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.qualification__card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
 
 /* qualification section ends */
 
