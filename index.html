@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <!-- Add this before your main.js -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        
+        <!-- <script src="/assets/js/main.js"></script> -->
+
+
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Krishna Kumar Rathore</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#qualification" class="nav__link">Qualification</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#Achivements" class="nav__link">Achivements</a></li>
+                        <!-- <li class="nav__item"><a href="#about" class="nav__link">About</a></li> -->
+                        <!-- <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME tailwind =====-->
+            <section id="home" class="relative py-16 bg-white max-w-screen-lg mx-auto">
+              <div class="grid md:grid-cols-2 gap-8 items-center px-6">
+                
+                <div class="flex flex-col gap-6 sm:gap-10 not-md:justify-center not-md:items-center ">
+                  <!-- Text Content -->
+                  <div>
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl  leading-tight text-gray-900 dark:text-black">
+                      Hi,<br />
+                      I'm <span class="text-blue-500">Krishna</span><br />
+                      Software Developer
+                    </h1>
+                  </div>
+                
+                  <!-- Social Icons -->
+                  <div class="flex flex-start gap-6 pt-2 sm:pt-1">
+                    <a
+                      href="https://www.linkedin.com/in/krishna-kumar-rathore-47104022a"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-3xl sm:text-5xl  hover:text-blue-500 transition-transform transform hover:scale-110"
+                    >
+                      <i class='bx bxl-linkedin'></i>
+                    </a>
+                
+                    <a
+                      href="https://github.com/Krishna-Kumar-Rathore"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-3xl sm:text-5xl  hover:text-black transition-transform transform hover:scale-110"
+                    >
+                      <i class='bx bxl-github'></i>
+                    </a>
+                
+                    <a
+                      href="https://wa.me/916263612174"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-3xl sm:text-5xl hover:text-green-500 transition-transform transform hover:scale-110"
+                    >
+                      <i class='bx bxl-whatsapp'></i>
+                    </a>
+                  </div>
+                </div>           
+                
+            
+                <!-- SVG Image -->
+                <div class="flex justify-center items-center mt-10 not-sm:mt-3">
+                  <div class="relative w-[220px] sm:w-[260px] md:w-[300px] h-auto rounded-xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700">
+                    <img
+                      src="assets/img/krishna1.jpg"
+                      alt="Krishna's Profile"
+                      class="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-105"
+                    />
+                  </div>
+                </div>
+                
+                
+            
+              </div>
+            </section>
+            
+
+            
+
+            <!--===== SKILLS tailwind =====-->
+            <section id="skills" class="py-12  text-white max-w-screen-lg mx-auto">
+                <div class="container px-6 text-center">
+                    <h2 class="text-3xl font-bold my-10 text-[#368BFF] section-title ">Skills</h2>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+                        <!-- Programming Languages -->
+                        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                            <i class="fa-solid fa-code text-3xl text-blue-400"></i>
+                            <h3 class="mt-2 font-semibold">Programming</h3>
+                            <p class="text-sm">C, C++, Java, JavaScript</p>
+                            <p class="text-xs text-gray-400">Proficient in object-oriented programming and problem-solving.</p>
+                        </div>
+                        
+                        <!-- Web Technologies -->
+                        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                            <i class="fa-solid fa-globe text-3xl text-green-400"></i>
+                            <h3 class="mt-2 font-semibold">Web Technologies</h3>
+                            <p class="text-sm">HTML, CSS, JavaScript, React, Tailwind CSS</p>
+                            <p class="text-xs text-gray-400">Experienced in building responsive and dynamic web applications.</p>
+                        </div>
+                        
+                        <!-- Backend Development -->
+                        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                            <i class="fa-solid fa-server text-3xl text-yellow-400"></i>
+                            <h3 class="mt-2 font-semibold">Backend</h3>
+                            <p class="text-sm">Node.js, Express.js</p>
+                            <p class="text-xs text-gray-400">Skilled in server-side development and API creation.</p>
+                        </div>
+                        
+                        <!-- Databases -->
+                        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                            <i class="fa-solid fa-database text-3xl text-red-400"></i>
+                            <h3 class="mt-2 font-semibold">Databases</h3>
+                            <p class="text-sm">MySQL, MongoDB</p>
+                            <p class="text-xs text-gray-400">Experience with relational and NoSQL databases for efficient data management.</p>
+                        </div>
+                        
+                        <!-- Machine Learning & AI -->
+                        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                            <i class="fa-solid fa-brain text-3xl text-purple-400"></i>
+                            <h3 class="mt-2 font-semibold">ML & DL</h3>
+                            <p class="text-sm">Deep Learning, Machine Learning</p>
+                            <p class="text-xs text-gray-400">Knowledge in building and training predictive models.</p>
+                        </div>
+                        
+                        <!-- Tools -->
+                        <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                            <i class="fa-solid fa-tools text-3xl text-pink-400"></i>
+                            <h3 class="mt-2 font-semibold">Tools</h3>
+                            <p class="text-sm">VS Code, Git, GitHub</p>
+                            <p class="text-xs text-gray-400">Proficient in version control and development tools.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                     
+
+
+            <!-- Qualification Section Starts  tailwind -->
+            <!-- section section-title qualification -->
+            <section id="qualification" class="py-12 text-white max-w-screen-lg mx-auto section">
+                <div class="px-6">
+                  <h2 class="text-3xl font-bold text-[#368BFF] mb-10 text-center section-title">Qualification</h2>
+              
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    
+                    <!-- M.Tech -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-blue-400 transition-all duration-300">
+                      <div class="flex items-center gap-3 mb-4">
+                        <i class="uil uil-graduation-cap text-3xl text-blue-400"></i>
+                        <h3 class="text-xl font-semibold">Master of Technology</h3>
+                      </div>
+                      <p class="text-sm text-gray-300">Computer Science</p>
+                      <p class="text-sm text-gray-300">NIT Rourkela</p>
+                      <p class="text-sm text-gray-400 mt-2">Year: <strong class="text-white">2024–present</strong></p>
+                      <p class="text-sm text-gray-400">SPI: <strong class="text-white">7.74</strong></p>
+                    </div>
+              
+                    <!-- B.Tech -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-blue-400 transition-all duration-300">
+                      <div class="flex items-center gap-3 mb-4">
+                        <i class="uil uil-graduation-cap text-3xl text-blue-400"></i>
+                        <h3 class="text-xl font-semibold">Bachelor of Technology</h3>
+                      </div>
+                      <p class="text-sm text-gray-300">Information Technology</p>
+                      <p class="text-sm text-gray-300">BIT Durg</p>
+                      <p class="text-sm text-gray-400 mt-2">Year: <strong class="text-white">2019–2023</strong></p>
+                      <p class="text-sm text-gray-400">SPI: <strong class="text-white">8.27</strong></p>
+                    </div>
+              
+                    <!-- Higher Secondary -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-blue-400 transition-all duration-300">
+                      <div class="flex items-center gap-3 mb-4">
+                        <i class="uil uil-book-reader text-3xl text-blue-400"></i>
+                        <h3 class="text-xl font-semibold">Higher Secondary</h3>
+                      </div>
+                      <p class="text-sm text-gray-300">MGM Senior Secondary School</p>
+                      <p class="text-sm text-gray-300">Board: <strong>CBSE</strong></p>
+                      <p class="text-sm text-gray-400 mt-2">Year: <strong class="text-white">2018–2019</strong></p>
+                      <p class="text-sm text-gray-400">Percentage: <strong class="text-white">77.4%</strong></p>
+                    </div>
+              
+                    <!-- Secondary -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-blue-400 transition-all duration-300">
+                      <div class="flex items-center gap-3 mb-4">
+                        <i class="uil uil-book text-3xl text-blue-400"></i>
+                        <h3 class="text-xl font-semibold">Secondary School</h3>
+                      </div>
+                      <p class="text-sm text-gray-300">MGM Senior Secondary School</p>
+                      <p class="text-sm text-gray-300">Board: <strong>CBSE</strong></p>
+                      <p class="text-sm text-gray-400 mt-2">Year: <strong class="text-white">2016–2017</strong></p>
+                      <p class="text-sm text-gray-400">CGPA: <strong class="text-white">9.8</strong></p>
+                    </div>
+              
+                  </div>
+                </div>
+              </section>
+              
+            <!-- Qualification Section Ends -->
+
+           
+            <!--===== project &  WORK  =====-->
+            <!--=====    =====-->
+            <section id="work" class="py-16 px-4 bg-white section max-w-screen-lg mx-auto">
+              <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white section-title">Projects</h2>
+              
+             
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div>
+                  <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                    <a href="https://github.com/Krishna-Kumar-Rathore/Restaurant-Automation-System" target="_blank">
+                      <img src="assets/img/work1.jpg" alt="" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 rounded-xl">
+                      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-50 transition-opacity duration-700 rounded-xl">
+                        <span class="text-white text-lg font-medium">Click here to review</span>
+                      </div>
+                    </a>
+                  </div>
+                  <h3 class="text-center mt-4 text-indigo-600 dark:text-indigo-400 text-2xl font-semibold tracking-tight">RAS</h3>
+                </div>
+                
+                 <!-- Project 2 -->
+                <div>
+                  <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                    <a href="https://krishna-kumar-rathore.github.io/shoppingApp/" target="_blank">
+                      <img src="assets/img/work5.jpg" alt="" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 rounded-xl">
+                      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-50 transition-opacity duration-700 rounded-xl">
+                        <span class="text-white text-lg font-medium">Click here to review</span>
+                      </div>
+                    </a>
+                  </div>
+                  <h3 class="text-center mt-4 text-indigo-600 dark:text-indigo-400 text-2xl font-semibold tracking-tight">ShoppingApp</h3>
+                </div>
+
+                <!-- Project 3 -->
+                <div>
+                  <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                    <a href="https://krishna-kumar-rathore.github.io/razorpay/" target="_blank">
+                      <img src="assets/img/work4.jpg" alt="" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 rounded-xl">
+                      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-50 transition-opacity duration-700 rounded-xl">
+                        <span class="text-white text-lg font-medium">Click here to review</span>
+                      </div>
+                    </a>
+                  </div>
+                  <h3 class="text-center mt-4 text-indigo-600 dark:text-indigo-400 text-2xl font-semibold tracking-tight">Razorpay Clone</h3>
+                </div>
+            
+                <!-- Project 4 -->               
+                 <div>
+                  <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                    <a href="https://krishna-kumar-rathore.github.io/HTML-CSS-Quiz/" target="_blank">
+                      <img src="assets/img/work2.jpg" alt="" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 rounded-xl">
+                      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-50 transition-opacity duration-700 rounded-xl">
+                        <span class="text-white text-lg font-medium">Click here to review</span>
+                      </div>
+                    </a>
+                  </div>
+                  <h3 class="text-center mt-4 text-indigo-600 dark:text-indigo-400 text-2xl font-semibold tracking-tight">Quick Web Quiz</h3>
+                 </div>
+                
+            
+                <!-- Project 5 -->
+                <div>
+                  <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                    <a href="https://krishna-kumar-rathore.github.io/CSS-photo-gallery/" target="_blank">
+                      <img src="assets/img/work3.jpg" alt="" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 rounded-xl">
+                      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-50 transition-opacity duration-700 rounded-xl">
+                        <span class="text-white text-lg font-medium">Click here to review</span>
+                      </div>
+                    </a>
+                  </div>
+                  <h3 class="text-center mt-4 text-indigo-600 dark:text-indigo-400 text-2xl font-semibold tracking-tight">Cat Photo Gallery</h3>
+                 </div>
+            
+                <!-- Project 6 -->
+                <div>
+                  <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                    <a href="#" target="_blank">
+                      <img src="assets/img/work6.jpg" alt="" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 rounded-xl">
+                      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-50 transition-opacity duration-700 rounded-xl">
+                        <span class="text-white text-lg font-medium">Click here to review</span>
+                      </div>
+                    </a>
+                  </div>
+                  
+                  <h3 class="text-center mt-4 text-indigo-600 dark:text-indigo-400 text-2xl font-semibold tracking-tight">
+                    Portfolio
+                  </h3>
+                  
+                  
+                </div>
+                
+              </div>
+            </section>
+            
+
+            <!-- class="" &  -->
+            <!-- Achivements section starts  -->
+            <section id="Achivements" class="py-8 text-white max-w-screen-lg mx-auto achv section">
+                <div class="px-6">
+                  <h2 class="text-3xl font-bold text-[#368BFF] mb-8 text-center section-title">Achievements</h2>
+              
+                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    
+                    <!-- Achievements List -->
+                    <div>
+                      <ul class="space-y-6">
+                        <li class="bg-gray-800 p-4 rounded-lg shadow-md">
+                          <h3 class="text-xl font-semibold text-blue-400">GATE CSE 2024</h3>
+                          <p class="text-sm text-gray-300">Secured AIR 2276 with 98.16 percentile and 610 score.</p>
+                        </li>
+                        <li class="bg-gray-800 p-4 rounded-lg shadow-md">
+                          <h3 class="text-xl font-semibold text-blue-400">JEE MAINS 2019</h3>
+                          <p class="text-sm text-gray-300">Qualified with 80 percentile.</p>
+                        </li>
+                        <li class="bg-gray-800 p-4 rounded-lg shadow-md">
+                          <h3 class="text-xl font-semibold text-blue-400">Chhattisgarh School Games</h3>
+                          <p class="text-sm text-gray-300">Won Gold in State-Level Softball U-17 (2016–17).</p>
+                        </li>
+                        <li class="bg-gray-800 p-4 rounded-lg shadow-md">
+                          <h3 class="text-xl font-semibold text-blue-400">Inter School Volleyball</h3>
+                          <p class="text-sm text-gray-300">Earned 1 Gold & 2 Silver medals in tournaments.</p>
+                        </li>
+                        <li class="bg-gray-800 p-4 rounded-lg shadow-md">
+                          <h3 class="text-xl font-semibold text-blue-400">Sports Prefect</h3>
+                          <p class="text-sm text-gray-300">Led school sports events, promoting team spirit.</p>
+                        </li>
+                      </ul>
+                    </div>
+              
+                    <!-- Image -->
+                    <div class="flex justify-center">
+                      <img src="assets/img/achivementsImg.avif" alt="Achievements" class="rounded-lg shadow-lg max-w-full h-auto">
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              
+            <!-- Achivements section ends  -->
+
+
+            <!-- ===== ABOUT =====-->
+            <section id="about" class="py-12 text-white max-w-screen-lg mx-auto about section">
+                <div class="px-6">
+                  <h2 class="text-3xl font-bold text-[#368BFF] mb-8 text-center section-title">About</h2>
+              
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <!-- Image Section -->
+                    <div class="flex flex-col justify-center items-center gap-4">
+                      <img src="assets/img/work6.jpg" alt="Krishna Image" class="w-64 rounded-lg shadow-md" />
+                      <img src="assets/img/work4.jpg" alt="Secondary Image" class="w-64 rounded-lg shadow-md" />
+                    </div>
+              
+                    <!-- Text Section -->
+                    <div>
+                      <h3 class="text-2xl font-semibold text-blue-400 mb-4">I'm Krishna</h3>
+                      <p class="text-gray-900 text-sm leading-relaxed">
+                        Passionate Computer Science professional skilled in C, C++, Data Structures & Algorithms, and MySQL. Proficient in frontend technologies like React, Tailwind CSS, Node.js, Express.js, MongoDB and experienced in building responsive web apps. Eager to contribute and grow in dynamic development teams through continuous learning and innovation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Send" class="contact__button button">
+                    </form>
+                </div>
+            </section>           
+
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Kirshna Kumar Rathore</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/share/XBxwxmqAPxwGsLS5/?mibextid=qi2Omg" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/krishna_rathore2835?igsh=MWw4NmZ6cXd2NmZ0ag==
+                " class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.linkedin.com/in/krishna-kumar-rathore-47104022a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/Krishna-Kumar-Rathore" class="footer__icon"><i class='bx bxl-github' ></i></a>
+
+            </div>
+            <p class="footer__copy">&#169; KKR. All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+
+        <!--===== MAIN JS =====-->
+         <script src="assets/js/main.js"></script>
+    </body>
+</html>
