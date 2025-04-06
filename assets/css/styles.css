@@ -122,7 +122,11 @@ img {
   align-items: center;
   font-weight: var(--font-semi);
 }
+<<<<<<< HEAD
 @media screen and (max-width: 767px) {
+=======
+@media screen and (max-width: 777px) {
+>>>>>>> a26fd5b3c5640d32ef0abf043888784efb4c6789
   .nav__menu {
     position: fixed;
     top: var(--header-height);
@@ -198,6 +202,10 @@ img {
 .home__social {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
+=======
+  justify-content: start;
+>>>>>>> a26fd5b3c5640d32ef0abf043888784efb4c6789
 }
 .home__social-icon {
   width: max-content;
@@ -220,7 +228,47 @@ img {
 }
 .home__blob-img {
   width: 360px;
+<<<<<<< HEAD
   border-radius: 5px;
+=======
+}
+.home__social {
+  /* border: 2px solid black; */
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 0%;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.homebox{
+  /* border: 2px black solid; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: start;
+  align-items: start;
+}
+#home{
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width:600px){
+  #home{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#profileimg{
+  border-radius: 25px;
+  max-width: 300px;
+  height: auto;
+  box-shadow: 10px 10px 10px grey;
+>>>>>>> a26fd5b3c5640d32ef0abf043888784efb4c6789
 }
 
 /*BUTTONS*/
@@ -327,6 +375,13 @@ img {
 }
 
 /* ===== WORK =====*/
+<<<<<<< HEAD
+=======
+.websiteimg{
+  width: 100%;
+  height: 100%;
+}
+>>>>>>> a26fd5b3c5640d32ef0abf043888784efb4c6789
 .work__container {
   position: relative;
   row-gap: 2rem;
@@ -435,6 +490,10 @@ img {
   .home__social {
     padding-top: 0;
     padding-bottom: 1rem;
+<<<<<<< HEAD
+=======
+    gap: 1rem;
+>>>>>>> a26fd5b3c5640d32ef0abf043888784efb4c6789
     flex-direction: row;
     align-self: flex-end;
   }
@@ -472,7 +531,14 @@ img {
     justify-items: center;
   }
 }
+<<<<<<< HEAD
 @media screen and (min-width: 768px) {
+=======
+
+
+
+@media screen and (min-width: 777px) {
+>>>>>>> a26fd5b3c5640d32ef0abf043888784efb4c6789
   body {
     margin: 0;
   }
@@ -543,7 +609,10 @@ img {
 
 
 /* qualification section starts */
+<<<<<<< HEAD
 
+=======
+>>>>>>> a26fd5b3c5640d32ef0abf043888784efb4c6789
 .qualification__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -590,8 +659,11 @@ img {
 }
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> a26fd5b3c5640d32ef0abf043888784efb4c6789
 /* qualification section ends */
 
 
@@ -612,6 +684,7 @@ img {
 }
 
 
+<<<<<<< HEAD
 /* Achivements section ends  */
 
 
@@ -684,3 +757,6 @@ img {
       grid-template-columns: 1fr;
   }
 }
+=======
+/* Achivements section ends  */
+>>>>>>> a26fd5b3c5640d32ef0abf043888784efb4c6789
