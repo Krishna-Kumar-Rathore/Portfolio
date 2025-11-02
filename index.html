@@ -166,10 +166,10 @@
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 font-semibold">
             <!-- Logo -->
             <div>
-                <a href="#home" class="text-xl font-bold text-gray-900">Krishna Kumar Rathore</a>
+                <a href="#home" class="text-lg sm:text-xl font-bold text-gray-900">Krishna Kumar Rathore</a>
             </div>
         
-            <!-- Menu Links -->
+            <!-- Desktop Menu -->
             <div id="nav-menu" class="hidden md:flex space-x-6">
                 <a href="#home" class="relative text-gray-800 hover:text-blue-600 after:absolute after:left-0 after:-bottom-1 after:h-[3px] after:w-0 hover:after:w-full after:bg-blue-600 after:transition-all duration-300">Home</a>
                 <a href="#about" class="relative text-gray-800 hover:text-blue-600 after:absolute after:left-0 after:-bottom-1 after:h-[3px] after:w-0 hover:after:w-full after:bg-blue-600 after:transition-all duration-300">About</a>
@@ -179,25 +179,41 @@
                 <a href="#contact" class="relative text-gray-800 hover:text-blue-600 after:absolute after:left-0 after:-bottom-1 after:h-[3px] after:w-0 hover:after:w-full after:bg-blue-600 after:transition-all duration-300">Contact</a>
             </div>
         
-            <!-- Hamburger Icon -->
-            <div class="md:hidden" id="nav-toggle">
-                <i class='bx bx-menu text-2xl text-gray-800 cursor-pointer'></i>
+            <!-- Mobile Menu Toggle -->
+            <div class="md:hidden">
+                <button id="nav-toggle" class="p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200">
+                    <i class='bx bx-menu text-2xl text-gray-800'></i>
+                </button>
             </div>
         </nav>
         
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 opacity-0 invisible transition-all duration-300 md:hidden"></div>
+        
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="fixed top-0 right-0 h-full w-[70%] max-w-xs bg-[#0a0a23] shadow-lg transform translate-x-full transition-transform duration-300 z-50 md:hidden flex flex-col px-6 py-8 space-y-6">
-            <a href="#home" class="text-white hover:text-blue-600 text-lg font-medium">Home</a>
-            <a href="#about" class="text-white hover:text-blue-600 text-lg font-medium">About</a>
-            <a href="#skills" class="text-white hover:text-blue-600 text-lg font-medium">Skills</a>
-            <a href="#projects" class="text-white hover:text-blue-600 text-lg font-medium">Projects</a>
-            <a href="#achievements" class="text-white hover:text-blue-600 text-lg font-medium">Achievements</a>
-            <a href="#contact" class="text-white hover:text-blue-600 text-lg font-medium">Contact</a>
+        <div id="mobile-menu" class="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl transform translate-x-full transition-transform duration-300 z-50 md:hidden">
+            <!-- Mobile Menu Header -->
+            <div class="flex items-center justify-between p-4 border-b border-gray-200">
+                <h3 class="text-lg font-bold text-gray-900">Menu</h3>
+                <button id="mobile-close" class="p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200">
+                    <i class='bx bx-x text-2xl text-gray-800'></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu Links -->
+            <div class="flex flex-col py-4">
+                <a href="#home" class="px-6 py-4 text-gray-800 hover:text-blue-600 hover:bg-blue-50 text-lg font-medium transition-all duration-200 border-b border-gray-100">Home</a>
+                <a href="#about" class="px-6 py-4 text-gray-800 hover:text-blue-600 hover:bg-blue-50 text-lg font-medium transition-all duration-200 border-b border-gray-100">About</a>
+                <a href="#skills" class="px-6 py-4 text-gray-800 hover:text-blue-600 hover:bg-blue-50 text-lg font-medium transition-all duration-200 border-b border-gray-100">Skills</a>
+                <a href="#projects" class="px-6 py-4 text-gray-800 hover:text-blue-600 hover:bg-blue-50 text-lg font-medium transition-all duration-200 border-b border-gray-100">Projects</a>
+                <a href="#achievements" class="px-6 py-4 text-gray-800 hover:text-blue-600 hover:bg-blue-50 text-lg font-medium transition-all duration-200 border-b border-gray-100">Achievements</a>
+                <a href="#contact" class="px-6 py-4 text-gray-800 hover:text-blue-600 hover:bg-blue-50 text-lg font-medium transition-all duration-200">Contact</a>
+            </div>
         </div>
     </header>
 
     <!-- Home Section -->
-    <section id="home" class="min-h-screen hero-gradient flex items-center justify-center relative overflow-hidden mb-10">
+    <section id="home" class="min-h-screen hero-gradient flex items-center justify-center relative overflow-hidden">
         <!-- Enhanced Background Elements -->
         <div class="absolute inset-0 overflow-hidden">
             <!-- Animated particles -->
@@ -217,10 +233,9 @@
             </div>
         </div>
         
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center relative z-10 mt-[80px]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center relative z-10">
             <!-- Enhanced Text Content -->
             <div class="text-white space-y-8">
-              
                 <div class="space-y-4">
                     <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20">
                         <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
@@ -513,11 +528,11 @@
                             <span class="text-sm font-semibold text-primary">500+ problems</span>
                         </div>
                         <div class="flex justify-between items-center">
-                            <span class="text-gray-600">CodeChef</span>
+                            <span class="text-gray-600">GeeksforGeeks</span>
                             <span class="text-sm font-semibold text-secondary">300+ problems</span>
                         </div>
                         <div class="flex justify-between items-center">
-                            <span class="text-gray-600">GeeksforGeeks</span>
+                            <span class="text-gray-600">CodeChef</span>
                             <span class="text-sm font-semibold text-accent">200+ problems</span>
                         </div>
                     </div>
@@ -934,41 +949,64 @@
             // Only update active navigation highlighting, no background changes
         });
 
-        // Mobile menu toggle - Updated for new structure
+        // Mobile menu toggle - Improved responsive functionality
         const navToggle = document.getElementById('nav-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
+        const mobileOverlay = document.getElementById('mobile-overlay');
+        const mobileClose = document.getElementById('mobile-close');
         let isMenuOpen = false;
 
+        function openMobileMenu() {
+            isMenuOpen = true;
+            mobileMenu.classList.remove('translate-x-full');
+            mobileMenu.classList.add('translate-x-0');
+            mobileOverlay.classList.remove('opacity-0', 'invisible');
+            mobileOverlay.classList.add('opacity-100', 'visible');
+            document.body.style.overflow = 'hidden'; // Prevent scroll when menu is open
+        }
+
+        function closeMobileMenu() {
+            isMenuOpen = false;
+            mobileMenu.classList.add('translate-x-full');
+            mobileMenu.classList.remove('translate-x-0');
+            mobileOverlay.classList.add('opacity-0', 'invisible');
+            mobileOverlay.classList.remove('opacity-100', 'visible');
+            document.body.style.overflow = ''; // Restore scroll
+        }
+
+        // Open menu when hamburger is clicked
         navToggle.addEventListener('click', () => {
-            isMenuOpen = !isMenuOpen;
-            if (isMenuOpen) {
-                mobileMenu.classList.remove('translate-x-full');
-                mobileMenu.classList.add('translate-x-0');
-                navToggle.innerHTML = '<i class="bx bx-x text-2xl text-gray-800 cursor-pointer"></i>';
+            if (!isMenuOpen) {
+                openMobileMenu();
             } else {
-                mobileMenu.classList.add('translate-x-full');
-                mobileMenu.classList.remove('translate-x-0');
-                navToggle.innerHTML = '<i class="bx bx-menu text-2xl text-gray-800 cursor-pointer"></i>';
+                closeMobileMenu();
             }
         });
+
+        // Close menu when close button is clicked
+        mobileClose.addEventListener('click', closeMobileMenu);
+
+        // Close menu when overlay is clicked
+        mobileOverlay.addEventListener('click', closeMobileMenu);
 
         // Close mobile menu when clicking on links
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => {
-                isMenuOpen = false;
-                mobileMenu.classList.add('translate-x-full');
-                mobileMenu.classList.remove('translate-x-0');
-                navToggle.innerHTML = '<i class="bx bx-menu text-2xl text-gray-800 cursor-pointer"></i>';
+                closeMobileMenu();
             });
         });
 
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (isMenuOpen && !mobileMenu.contains(e.target) && !navToggle.contains(e.target)) {
-                isMenuOpen = false;
-                mobileMenu.classList.add('translate-x-full');
-                mobileMenu.classList.remove('translate-x-0');
-                navToggle.innerHTML = '<i class="bx bx-menu text-2xl text-gray-800 cursor-pointer"></i>';
+        // Close menu when window is resized to desktop size
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768 && isMenuOpen) { // 768px is md breakpoint
+                closeMobileMenu();
+            }
+        });
+
+        // Close menu on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && isMenuOpen) {
+                closeMobileMenu();
             }
         });
 
