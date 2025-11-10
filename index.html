@@ -347,56 +347,172 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <!-- Animated background shapes -->
+            <div class="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-blue-200/30 to-purple-200/30 rounded-full blur-xl animate-pulse"></div>
+            <div class="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-purple-200/20 to-pink-200/20 rounded-full blur-xl animate-pulse" style="animation-delay: 2s;"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-24 bg-gradient-to-br from-cyan-200/25 to-blue-200/25 rounded-full blur-xl animate-bounce" style="animation-delay: 1s;"></div>
+            
+            <!-- Floating geometric shapes -->
+            <div class="absolute top-32 right-1/4 w-6 h-6 border-2 border-blue-300/50 rotate-45 animate-spin-slow"></div>
+            <div class="absolute bottom-32 left-1/3 w-4 h-4 bg-purple-400/30 rounded-full animate-ping"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Enhanced Header -->
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold gradient-text mb-4">About Me</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Passionate about solving complex problems through code and continuous learning
+                <div class="inline-flex items-center justify-center p-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full mb-4">
+                    <span class="px-4 py-2 bg-white rounded-full text-sm font-semibold text-gray-700 shadow-sm">
+                        Get to know me
+                    </span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent mb-6">
+                    About Me
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Passionate about solving complex problems through <span class="text-blue-600 font-semibold">code</span> and 
+                    <span class="text-purple-600 font-semibold">continuous learning</span>
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6">
-                    <div class="space-y-4">
-                        <h3 class="text-2xl font-bold text-gray-800">Software Developer & Researcher</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            I'm a Computer Science graduate from BIT Durg (CGPA: 8.27) currently pursuing M.Tech at NIT Rourkela (CGPA: 7.50). 
-                            With expertise in full-stack development, machine learning, and algorithmic trading, I've built multiple projects 
-                            ranging from security applications to tourism platforms.
-                        </p>
-                        <p class="text-gray-600 leading-relaxed">
-                            My recent work includes developing a QR code security scanner using ML models, building tourism applications with 
-                            the MERN stack, and researching deep learning frameworks for intraday trading. I'm passionate about creating 
-                            innovative solutions that make a real impact.
-                        </p>
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Enhanced Content Side -->
+                <div class="space-y-8">
+                    <!-- Animated Title -->
+                    <div class="relative">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg blur opacity-25"></div>
+                        <div class="relative bg-white p-6 rounded-lg">
+                            <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+                                Software Developer & Researcher
+                            </h3>
+                            <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
+                        </div>
                     </div>
                     
-                    <!-- Stats -->
-                    <div class="grid grid-cols-2 gap-6 pt-6">
-                        <div class="text-center p-4 bg-gray-50 rounded-lg">
-                            <div class="text-3xl font-bold text-primary">1000+</div>
-                            <div class="text-gray-600">Problems Solved</div>
+                    <!-- Interactive Content Blocks -->
+                    <div class="space-y-6">
+                        <div class="group p-6 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-blue-200">
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                    <i class="fas fa-graduation-cap text-white text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">Academic Excellence</h4>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        Computer Science graduate from BIT Durg (CGPA: 8.27) currently pursuing M.Tech at 
+                                        <span class="font-semibold text-blue-600">NIT Rourkela</span> (CGPA: 7.50).
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text-center p-4 bg-gray-50 rounded-lg">
-                            <div class="text-3xl font-bold text-secondary">10+</div>
-                            <div class="text-gray-600">Projects Built</div>
+
+                        <div class="group p-6 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-purple-200">
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                    <i class="fas fa-code text-white text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">Technical Expertise</h4>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        Expertise in <span class="font-semibold text-purple-600">full-stack development</span>, 
+                                        <span class="font-semibold text-indigo-600">machine learning</span>, and 
+                                        <span class="font-semibold text-blue-600">algorithmic trading</span>.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text-center p-4 bg-gray-50 rounded-lg">
-                            <div class="text-3xl font-bold text-accent">2276</div>
-                            <div class="text-gray-600">GATE AIR</div>
+
+                        <div class="group p-6 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-indigo-200">
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-indigo-500 to-cyan-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                    <i class="fas fa-rocket text-white text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">Recent Innovations</h4>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        Built QR security scanners, MERN tourism platforms, and deep learning trading frameworks. 
+                                        Creating innovative solutions that make a real impact.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text-center p-4 bg-gray-50 rounded-lg">
-                            <div class="text-3xl font-bold text-primary">98.16%</div>
-                            <div class="text-gray-600">GATE Percentile</div>
+                    </div>
+                    
+                    <!-- Enhanced Stats with Animation -->
+                    <div class="grid grid-cols-2 gap-4 pt-8">
+                        <div class="group relative overflow-hidden p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl border border-blue-200 hover:shadow-lg transition-all duration-300 cursor-pointer">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                            <div class="relative z-10">
+                                <div class="text-3xl font-bold text-blue-600 mb-2 group-hover:scale-110 transition-transform duration-300" id="counter-1">1000+</div>
+                                <div class="text-gray-700 font-medium">Problems Solved</div>
+                            </div>
+                            <i class="fas fa-code absolute top-4 right-4 text-blue-300 opacity-50"></i>
+                        </div>
+                        
+                        <div class="group relative overflow-hidden p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl border border-purple-200 hover:shadow-lg transition-all duration-300 cursor-pointer">
+                            <div class="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                            <div class="relative z-10">
+                                <div class="text-3xl font-bold text-purple-600 mb-2 group-hover:scale-110 transition-transform duration-300" id="counter-2">10+</div>
+                                <div class="text-gray-700 font-medium">Projects Built</div>
+                            </div>
+                            <i class="fas fa-project-diagram absolute top-4 right-4 text-purple-300 opacity-50"></i>
+                        </div>
+                        
+                        <div class="group relative overflow-hidden p-6 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl border border-indigo-200 hover:shadow-lg transition-all duration-300 cursor-pointer">
+                            <div class="absolute inset-0 bg-gradient-to-br from-indigo-500 to-indigo-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                            <div class="relative z-10">
+                                <div class="text-3xl font-bold text-indigo-600 mb-2 group-hover:scale-110 transition-transform duration-300" id="counter-3">2276</div>
+                                <div class="text-gray-700 font-medium">GATE AIR</div>
+                            </div>
+                            <i class="fas fa-trophy absolute top-4 right-4 text-indigo-300 opacity-50"></i>
+                        </div>
+                        
+                        <div class="group relative overflow-hidden p-6 bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-xl border border-cyan-200 hover:shadow-lg transition-all duration-300 cursor-pointer">
+                            <div class="absolute inset-0 bg-gradient-to-br from-cyan-500 to-cyan-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                            <div class="relative z-10">
+                                <div class="text-3xl font-bold text-cyan-600 mb-2 group-hover:scale-110 transition-transform duration-300" id="counter-4">98.16%</div>
+                                <div class="text-gray-700 font-medium">GATE Percentile</div>
+                            </div>
+                            <i class="fas fa-percentage absolute top-4 right-4 text-cyan-300 opacity-50"></i>
                         </div>
                     </div>
                 </div>
                 
-                <div class="relative">
-                    <div class="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-2xl transform rotate-6"></div>
-                    <img src="assets/img/work6.jpg" alt="About Krishna" 
-                         class="relative w-full rounded-2xl shadow-2xl object-cover h-96">
+                <!-- Enhanced Image Side -->
+                <div class="relative group">
+                    <!-- Floating background elements -->
+                    <div class="absolute -inset-8 bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-500 rounded-3xl opacity-20 group-hover:opacity-30 transition-all duration-500 blur-xl group-hover:blur-2xl"></div>
+                    <div class="absolute -inset-4 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-2xl opacity-30 animate-pulse"></div>
+                    
+                    <!-- Main image container with complex animations -->
+                    <div class="relative bg-white p-4 rounded-2xl shadow-2xl transform group-hover:scale-105 transition-all duration-500 group-hover:rotate-1">
+                        <img src="assets/img/work6.jpg" alt="About Krishna" 
+                             class="w-full rounded-xl object-cover h-96 group-hover:brightness-110 transition-all duration-500">
+                        
+                        <!-- Overlay elements -->
+                        <div class="absolute inset-4 rounded-xl bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                        
+                        <!-- Floating skill badges -->
+                        <div class="absolute -top-4 -left-4 bg-white rounded-full p-3 shadow-lg border-4 border-blue-100 animate-bounce" style="animation-delay: 0.5s;">
+                            <i class="fab fa-react text-blue-500 text-xl"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-6 bg-white rounded-full p-3 shadow-lg border-4 border-purple-100 animate-bounce" style="animation-delay: 1s;">
+                            <i class="fab fa-python text-purple-500 text-xl"></i>
+                        </div>
+                        <div class="absolute -bottom-4 -right-2 bg-white rounded-full p-3 shadow-lg border-4 border-indigo-100 animate-bounce" style="animation-delay: 1.5s;">
+                            <i class="fas fa-brain text-indigo-500 text-xl"></i>
+                        </div>
+                        <div class="absolute -bottom-2 -left-6 bg-white rounded-full p-3 shadow-lg border-4 border-cyan-100 animate-bounce" style="animation-delay: 2s;">
+                            <i class="fab fa-js-square text-yellow-500 text-xl"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Decorative elements -->
+                    <div class="absolute top-8 right-8 w-20 h-20 border-4 border-dashed border-blue-300 rounded-full animate-spin-slow opacity-50"></div>
+                    <div class="absolute bottom-8 left-8 w-16 h-16 border-4 border-dashed border-purple-300 rounded-full animate-spin-slow opacity-50" style="animation-direction: reverse; animation-delay: 1s;"></div>
                 </div>
             </div>
         </div>
